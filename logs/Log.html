@@ -1,0 +1,5683 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Jun 21 16:09:22 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>4</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:18</td>
+<td title="Message">Exception thrown adding oracle driver.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Class.forName0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Class.forName(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.&lt;clinit&gt;(ConnectionUtil.java:16)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.UpdateBalance(BankRepoJdbc.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Deposit.tranx(Deposit.java:32)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.main(Controller.java:49)
+</td></tr>
+
+<tr>
+<td>20</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:49</td>
+<td title="Message">Could not update</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.UpdateBalance(BankRepoJdbc.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Deposit.tranx(Deposit.java:32)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.main(Controller.java:49)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Jun 23 20:40:34 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:18</td>
+<td title="Message">Exception thrown adding oracle driver.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Class.forName0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Class.forName(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.&lt;clinit&gt;(ConnectionUtil.java:16)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Register.register(Register.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.registerYou(Controller.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.main(Controller.java:31)
+</td></tr>
+
+<tr>
+<td>21</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:35</td>
+<td title="Message">could not insert account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Register.register(Register.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.registerYou(Controller.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.main(Controller.java:31)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 10:01:16 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:18</td>
+<td title="Message">Exception thrown adding oracle driver.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Class.forName0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Class.forName(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.&lt;clinit&gt;(ConnectionUtil.java:16)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Register.register(Register.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.registerYou(Controller.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.main(Controller.java:32)
+</td></tr>
+
+<tr>
+<td>27</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:35</td>
+<td title="Message">could not insert account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Register.register(Register.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.registerYou(Controller.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.main(Controller.java:32)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 10:04:13 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>4</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:35</td>
+<td title="Message">could not insert account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Register.register(Register.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.registerYou(Controller.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.main(Controller.java:32)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 10:17:59 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:35</td>
+<td title="Message">could not insert account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Register.register(Register.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.registerYou(Controller.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.main(Controller.java:32)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 12:49:41 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:62</td>
+<td title="Message">Could not get balance</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.getBalance(BankRepoJdbc.java:55)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Deposit.tranx(Deposit.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:47)
+</td></tr>
+
+<tr>
+<td>15</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:49</td>
+<td title="Message">Could not update</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.UpdateBalance(BankRepoJdbc.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Deposit.tranx(Deposit.java:15)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:47)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 13:12:09 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:83</td>
+<td title="Message">could not find account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 13:33:58 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:84</td>
+<td title="Message">could not find account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 13:37:47 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:84</td>
+<td title="Message">could not find account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 13:41:24 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:86</td>
+<td title="Message">could not find account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:74)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 13:42:54 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:76</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:89</td>
+<td title="Message">could not find account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 13:48:05 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:76</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:18</td>
+<td title="Message">Exception thrown adding oracle driver.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Class.forName0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Class.forName(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.&lt;clinit&gt;(ConnectionUtil.java:16)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+</td></tr>
+
+<tr>
+<td>25</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:89</td>
+<td title="Message">could not find account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 13:53:19 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:76</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>18258</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:59</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>18549</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:67</td>
+<td title="Message">Could not get balance</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column index
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.getBalance(BankRepoJdbc.java:63)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Deposit.tranx(Deposit.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:58)
+</td></tr>
+
+<tr>
+<td>18555</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:45</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:01:13 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:76</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>27415</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:59</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>27684</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:67</td>
+<td title="Message">Could not get balance</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column index
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.getBalance(BankRepoJdbc.java:63)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Deposit.tranx(Deposit.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:58)
+</td></tr>
+
+<tr>
+<td>27690</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:45</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:03:15 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:76</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>11991</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:59</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>12264</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:67</td>
+<td title="Message">Could not get balance</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: ResultSet.next was not called
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedScrollableResultSet.getDouble(GeneratedScrollableResultSet.java:430)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getDouble(GeneratedResultSet.java:1328)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.getBalance(BankRepoJdbc.java:65)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Deposit.tranx(Deposit.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:58)
+</td></tr>
+
+<tr>
+<td>12269</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:45</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:06:26 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:76</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>29639</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:59</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:13:49 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:78</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>8450</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:59</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>8750</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:45</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:16:27 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:79</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>8650</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:60</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>8903</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:45</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:17:53 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:79</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:20:06 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:79</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:21:31 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:79</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:22:22 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:79</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:57:03 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:57:45 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 14:58:49 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:02:10 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+
+<tr>
+<td>17476</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters fradj</td>
+</tr>
+
+<tr>
+<td>30317</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>36416</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>36734</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:04:02 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>58562</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>63539</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:06:56 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>26810</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>27041</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:08:39 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>42093</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>49945</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:11:17 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>8109</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>8364</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:14:34 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16033</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16277</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:21:20 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:24:53 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:25:28 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:26:39 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:29:32 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:30:57 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:34:56 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:35:41 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters r</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:37:09 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:38:16 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:39:59 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:42:03 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryab</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 15:43:57 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:11:31 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters user</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:12:13 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:13:56 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:15:09 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>12192</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>22980</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:16:21 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:16:47 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:17:31 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:21:59 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:23:06 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:29:52 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>17963</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>65660</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>66075</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:53:56 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>15254</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>15471</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:56:22 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:56:57 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:57:51 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 16:58:30 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 18:24:29 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 18:28:12 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 18:29:33 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 18:30:34 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 18:47:24 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>25123</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>25538</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>93720</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>95422</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 18:57:28 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>25700</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>26028</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 19:05:42 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters jpohn</td>
+</tr>
+
+<tr>
+<td>17667</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>55327</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>69221</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>69596</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 19:07:49 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16011</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 22:01:29 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>39190</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters ryan</td>
+</tr>
+
+<tr>
+<td>59113</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>79069</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 22:03:51 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 22:05:15 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>20894</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>21218</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>172659</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>173037</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>185835</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>186141</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>307130</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>307490</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 22:11:02 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>36175</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>36603</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 22:14:04 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 22:14:43 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 22:15:35 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>21731</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>22298</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>23802</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>25407</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Jun 24 22:18:37 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>15902</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16260</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16610</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 09:47:45 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2462</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2702</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 09:48:48 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2241</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2492</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 09:51:21 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2385</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2602</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2830</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 09:56:06 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2373</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2602</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 09:58:04 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2415</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2635</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 09:58:39 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>23443</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>23689</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 10:02:37 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2380</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2613</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2855</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 10:04:03 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2206</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2431</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2667</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 10:06:23 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2469</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2692</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>2949</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>3225</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>3475</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>3714</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>3944</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>4175</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>4399</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>4625</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>4856</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 11:50:52 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 14:42:55 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>14864</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>15141</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 14:44:27 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>30585</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>30856</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>31171</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 14:47:50 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>11477</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>11796</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 14:49:23 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16317</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16574</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16810</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 14:50:32 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters password</td>
+</tr>
+
+<tr>
+<td>68774</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>115491</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>120916</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 14:57:17 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>14283</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>14549</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 14:58:53 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>18845</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>19072</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:10:35 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:45:03 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:49:56 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:104</td>
+<td title="Message">entering find all method with paramaters </td>
+</tr>
+
+<tr>
+<td>2376</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:118</td>
+<td title="Message">could not find account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.findAll(BankRepoJdbc.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:16)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:50:08 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:104</td>
+<td title="Message">entering find all method with paramaters </td>
+</tr>
+
+<tr>
+<td>2209</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:118</td>
+<td title="Message">could not find account</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankRepoJdbc.findAll(BankRepoJdbc.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:16)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:53:30 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:58:47 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters doe</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:00:41 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters DOE</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:01:59 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>44303</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters DoE</td>
+</tr>
+
+<tr>
+<td>44686</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters DoE</td>
+</tr>
+
+<tr>
+<td>45014</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters DoE</td>
+</tr>
+
+<tr>
+<td>73961</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters DoE</td>
+</tr>
+
+<tr>
+<td>74333</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters DoE</td>
+</tr>
+
+<tr>
+<td>74737</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters DoE</td>
+</tr>
+
+<tr>
+<td>85876</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters DoE</td>
+</tr>
+
+<tr>
+<td>86267</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters DoE</td>
+</tr>
+
+<tr>
+<td>86579</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters DoE</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:06:31 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>11592</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>26884</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>27210</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>27531</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>30235</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>30560</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>30991</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>33898</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>34205</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>34515</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>38096</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>38650</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>39196</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>41834</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>42139</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>42492</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>44992</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>45324</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>45646</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>48261</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>48573</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>49116</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>51973</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>52273</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>52587</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>55576</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>56125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>56438</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>58833</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>59409</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>59713</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>63915</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>64492</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>64804</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:08:14 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>20616</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>21483</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>22436</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>24415</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>24741</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>25137</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>27243</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>27548</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>28095</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>30556</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>30879</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>31465</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:27:49 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters doe</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:29:53 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>42825</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>52091</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>52956</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>85072</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>90234</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>90952</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>103673</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>107468</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>108273</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>127857</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>136238</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>137001</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:34:00 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>16175</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>23943</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>27002</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>44551</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>44955</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>53239</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>53600</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters doe</td>
+</tr>
+
+<tr>
+<td>53947</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters doe</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:41:15 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:43:09 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters micro</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:43:39 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>39531</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>39917</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:46:18 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>17030</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>17519</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>17849</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:47:48 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:80</td>
+<td title="Message">entering find by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16113</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>16457</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>22076</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>22397</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:61</td>
+<td title="Message">entering get Balance by name method with paramaters john</td>
+</tr>
+
+<tr>
+<td>22737</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankRepoJdbc category">com.revature.repository.BankRepoJdbc</td>
+<td>BankRepoJdbc.java:46</td>
+<td title="Message">entering Update Balance by name method with paramaters john</td>
+</tr>

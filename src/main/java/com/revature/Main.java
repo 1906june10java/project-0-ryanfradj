@@ -1,5 +1,9 @@
 package com.revature;
 
+import com.revature.controller.ControllerTwo;
+import com.revature.exception.InvalidAccountException;
+import com.revature.exception.InvalidWithdrawAmount;
+
 /** 
  * Create an instance of your controller and launch your application.
  * 
@@ -7,7 +11,8 @@ package com.revature;
  */
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InvalidAccountException, InvalidWithdrawAmount {
+		ControllerTwo.main(args);
 
 	}
 }

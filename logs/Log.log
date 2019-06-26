@@ -1,0 +1,485 @@
+2019-06-21 16:09:22 WARN  ConnectionUtil:18 - Exception thrown adding oracle driver.
+java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.revature.util.ConnectionUtil.<clinit>(ConnectionUtil.java:16)
+	at com.revature.repository.BankRepoJdbc.UpdateBalance(BankRepoJdbc.java:42)
+	at com.revature.controller.Deposit.tranx(Deposit.java:32)
+	at com.revature.controller.Controller.main(Controller.java:49)
+2019-06-21 16:09:22 ERROR BankRepoJdbc:49 - Could not update
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.UpdateBalance(BankRepoJdbc.java:42)
+	at com.revature.controller.Deposit.tranx(Deposit.java:32)
+	at com.revature.controller.Controller.main(Controller.java:49)
+2019-06-23 20:40:34 WARN  ConnectionUtil:18 - Exception thrown adding oracle driver.
+java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.revature.util.ConnectionUtil.<clinit>(ConnectionUtil.java:16)
+	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+	at com.revature.controller.Register.register(Register.java:14)
+	at com.revature.controller.Controller.registerYou(Controller.java:117)
+	at com.revature.controller.Controller.main(Controller.java:31)
+2019-06-23 20:40:34 ERROR BankRepoJdbc:35 - could not insert account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+	at com.revature.controller.Register.register(Register.java:14)
+	at com.revature.controller.Controller.registerYou(Controller.java:117)
+	at com.revature.controller.Controller.main(Controller.java:31)
+2019-06-24 10:01:16 WARN  ConnectionUtil:18 - Exception thrown adding oracle driver.
+java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.revature.util.ConnectionUtil.<clinit>(ConnectionUtil.java:16)
+	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+	at com.revature.controller.Register.register(Register.java:14)
+	at com.revature.controller.Controller.registerYou(Controller.java:115)
+	at com.revature.controller.Controller.main(Controller.java:32)
+2019-06-24 10:01:16 ERROR BankRepoJdbc:35 - could not insert account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+	at com.revature.controller.Register.register(Register.java:14)
+	at com.revature.controller.Controller.registerYou(Controller.java:115)
+	at com.revature.controller.Controller.main(Controller.java:32)
+2019-06-24 10:04:13 ERROR BankRepoJdbc:35 - could not insert account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+	at com.revature.controller.Register.register(Register.java:14)
+	at com.revature.controller.Controller.registerYou(Controller.java:115)
+	at com.revature.controller.Controller.main(Controller.java:32)
+2019-06-24 10:17:59 ERROR BankRepoJdbc:35 - could not insert account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.create(BankRepoJdbc.java:23)
+	at com.revature.controller.Register.register(Register.java:14)
+	at com.revature.controller.Controller.registerYou(Controller.java:115)
+	at com.revature.controller.Controller.main(Controller.java:32)
+2019-06-24 12:49:41 ERROR BankRepoJdbc:62 - Could not get balance
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.getBalance(BankRepoJdbc.java:55)
+	at com.revature.controller.Deposit.tranx(Deposit.java:13)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:47)
+2019-06-24 12:49:41 ERROR BankRepoJdbc:49 - Could not update
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.UpdateBalance(BankRepoJdbc.java:42)
+	at com.revature.controller.Deposit.tranx(Deposit.java:15)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:47)
+2019-06-24 13:12:09 ERROR BankRepoJdbc:83 - could not find account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:71)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+2019-06-24 13:33:58 ERROR BankRepoJdbc:84 - could not find account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:72)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+2019-06-24 13:37:47 ERROR BankRepoJdbc:84 - could not find account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:72)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+2019-06-24 13:41:24 ERROR BankRepoJdbc:86 - could not find account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:74)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+2019-06-24 13:42:54 TRACE BankRepoJdbc:76 - entering find by name method with paramaters john
+2019-06-24 13:42:54 ERROR BankRepoJdbc:89 - could not find account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:77)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+2019-06-24 13:48:05 TRACE BankRepoJdbc:76 - entering find by name method with paramaters john
+2019-06-24 13:48:05 WARN  ConnectionUtil:18 - Exception thrown adding oracle driver.
+java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.revature.util.ConnectionUtil.<clinit>(ConnectionUtil.java:16)
+	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:77)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+2019-06-24 13:48:05 ERROR BankRepoJdbc:89 - could not find account
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@database-1.ck2uflxj1kdl.us-east-2.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.BankRepoJdbc.findByName(BankRepoJdbc.java:77)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:38)
+2019-06-24 13:53:19 TRACE BankRepoJdbc:76 - entering find by name method with paramaters john
+2019-06-24 13:53:37 TRACE BankRepoJdbc:59 - entering get Balance by name method with paramaters john
+2019-06-24 13:53:37 ERROR BankRepoJdbc:67 - Could not get balance
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.BankRepoJdbc.getBalance(BankRepoJdbc.java:63)
+	at com.revature.controller.Deposit.tranx(Deposit.java:13)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:58)
+2019-06-24 13:53:38 TRACE BankRepoJdbc:45 - entering Update Balance by name method with paramaters john
+2019-06-24 14:01:13 TRACE BankRepoJdbc:76 - entering find by name method with paramaters john
+2019-06-24 14:01:41 TRACE BankRepoJdbc:59 - entering get Balance by name method with paramaters john
+2019-06-24 14:01:41 ERROR BankRepoJdbc:67 - Could not get balance
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.BankRepoJdbc.getBalance(BankRepoJdbc.java:63)
+	at com.revature.controller.Deposit.tranx(Deposit.java:13)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:58)
+2019-06-24 14:01:41 TRACE BankRepoJdbc:45 - entering Update Balance by name method with paramaters john
+2019-06-24 14:03:15 TRACE BankRepoJdbc:76 - entering find by name method with paramaters john
+2019-06-24 14:03:27 TRACE BankRepoJdbc:59 - entering get Balance by name method with paramaters john
+2019-06-24 14:03:27 ERROR BankRepoJdbc:67 - Could not get balance
+java.sql.SQLException: ResultSet.next was not called
+	at oracle.jdbc.driver.GeneratedScrollableResultSet.getDouble(GeneratedScrollableResultSet.java:430)
+	at oracle.jdbc.driver.GeneratedResultSet.getDouble(GeneratedResultSet.java:1328)
+	at com.revature.repository.BankRepoJdbc.getBalance(BankRepoJdbc.java:65)
+	at com.revature.controller.Deposit.tranx(Deposit.java:13)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:58)
+2019-06-24 14:03:27 TRACE BankRepoJdbc:45 - entering Update Balance by name method with paramaters john
+2019-06-24 14:06:26 TRACE BankRepoJdbc:76 - entering find by name method with paramaters john
+2019-06-24 14:06:55 TRACE BankRepoJdbc:59 - entering get Balance by name method with paramaters john
+2019-06-24 14:13:49 TRACE BankRepoJdbc:78 - entering find by name method with paramaters john
+2019-06-24 14:13:58 TRACE BankRepoJdbc:59 - entering get Balance by name method with paramaters john
+2019-06-24 14:13:58 TRACE BankRepoJdbc:45 - entering Update Balance by name method with paramaters john
+2019-06-24 14:16:27 TRACE BankRepoJdbc:79 - entering find by name method with paramaters john
+2019-06-24 14:16:36 TRACE BankRepoJdbc:60 - entering get Balance by name method with paramaters john
+2019-06-24 14:16:36 TRACE BankRepoJdbc:45 - entering Update Balance by name method with paramaters john
+2019-06-24 14:17:53 TRACE BankRepoJdbc:79 - entering find by name method with paramaters ryan
+2019-06-24 14:20:06 TRACE BankRepoJdbc:79 - entering find by name method with paramaters john
+2019-06-24 14:21:44 TRACE BankRepoJdbc:79 - entering find by name method with paramaters ryan
+2019-06-24 14:22:32 TRACE BankRepoJdbc:79 - entering find by name method with paramaters ryan
+2019-06-24 14:57:03 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 14:57:45 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 14:58:49 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:02:10 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:02:28 TRACE BankRepoJdbc:80 - entering find by name method with paramaters fradj
+2019-06-24 15:02:40 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 15:02:47 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 15:02:47 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 15:04:02 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 15:05:01 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 15:05:06 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 15:06:56 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 15:07:23 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 15:07:23 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 15:08:39 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 15:09:22 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 15:09:29 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 15:11:17 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 15:11:25 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 15:11:25 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 15:14:34 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 15:14:50 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 15:14:51 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 15:21:20 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:24:53 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:25:28 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:26:39 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:29:32 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:30:57 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 15:34:56 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:35:41 TRACE BankRepoJdbc:80 - entering find by name method with paramaters r
+2019-06-24 15:37:09 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:38:16 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:40:09 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 15:42:07 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryab
+2019-06-24 15:43:57 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 16:11:31 TRACE BankRepoJdbc:80 - entering find by name method with paramaters user
+2019-06-24 16:12:13 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 16:13:56 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 16:15:09 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:15:21 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:15:32 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:16:21 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:16:47 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:17:55 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:21:59 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:23:06 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:29:52 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:30:10 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:30:57 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 16:30:58 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 16:53:56 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:54:11 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 16:54:11 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 16:56:22 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:56:57 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:57:51 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 16:58:32 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 18:24:31 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 18:28:12 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 18:29:33 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 18:30:34 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 18:47:24 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 18:47:49 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 18:47:49 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 18:48:57 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 18:48:59 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 18:57:28 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 18:57:53 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 18:57:54 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 19:05:42 TRACE BankRepoJdbc:80 - entering find by name method with paramaters jpohn
+2019-06-24 19:05:59 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 19:06:37 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 19:06:51 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 19:06:51 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 19:07:49 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 19:08:05 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:01:29 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 22:02:08 TRACE BankRepoJdbc:80 - entering find by name method with paramaters ryan
+2019-06-24 22:02:28 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 22:02:48 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:03:51 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 22:05:15 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 22:05:36 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:05:36 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:08:07 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:08:08 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:08:21 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:08:21 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:10:22 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:10:22 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:11:02 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 22:11:38 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:11:38 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:14:04 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 22:14:43 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 22:15:35 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 22:15:57 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:15:57 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:15:59 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:16:00 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-24 22:18:37 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-24 22:18:53 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:18:53 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-24 22:18:54 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 09:47:45 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:47:47 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:47:47 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 09:48:48 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:48:51 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:48:51 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 09:51:22 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:51:24 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:51:24 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 09:51:24 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:56:06 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:56:08 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:56:08 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 09:58:04 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:58:07 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:58:07 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 09:58:39 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 09:59:03 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 09:59:03 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 10:02:37 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:02:40 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:02:40 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 10:02:40 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:04:03 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:04:06 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:04:06 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 10:04:06 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:06:23 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:06:25 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 10:06:25 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:06:26 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:06:26 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 10:06:26 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:06:26 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:06:27 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 10:06:27 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:06:27 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 10:06:27 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 10:06:28 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 11:50:52 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 14:42:55 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 14:43:10 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 14:43:10 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 14:44:27 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 14:44:58 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 14:44:58 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 14:44:58 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 14:47:51 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 14:48:02 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 14:48:02 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 14:49:23 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 14:49:40 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 14:49:40 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 14:49:40 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 14:50:32 TRACE BankRepoJdbc:80 - entering find by name method with paramaters password
+2019-06-25 14:51:40 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 14:52:27 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 14:52:33 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 14:57:17 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 14:57:31 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 14:57:31 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 14:58:53 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 14:59:11 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 14:59:12 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 19:10:35 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 19:45:03 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 19:49:56 TRACE BankRepoJdbc:104 - entering find all method with paramaters 
+2019-06-25 19:49:58 ERROR BankRepoJdbc:118 - could not find account
+java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.BankRepoJdbc.findAll(BankRepoJdbc.java:110)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:16)
+2019-06-25 19:50:08 TRACE BankRepoJdbc:104 - entering find all method with paramaters 
+2019-06-25 19:50:10 ERROR BankRepoJdbc:118 - could not find account
+java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.BankRepoJdbc.findAll(BankRepoJdbc.java:110)
+	at com.revature.controller.ControllerTwo.main(ControllerTwo.java:16)
+2019-06-25 19:53:30 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 19:58:47 TRACE BankRepoJdbc:80 - entering find by name method with paramaters doe
+2019-06-25 20:00:41 TRACE BankRepoJdbc:80 - entering find by name method with paramaters DOE
+2019-06-25 20:01:59 TRACE BankRepoJdbc:80 - entering find by name method with paramaters doe
+2019-06-25 20:02:44 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters DoE
+2019-06-25 20:02:44 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters DoE
+2019-06-25 20:02:44 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters DoE
+2019-06-25 20:03:13 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters DoE
+2019-06-25 20:03:14 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters DoE
+2019-06-25 20:03:14 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters DoE
+2019-06-25 20:03:25 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters DoE
+2019-06-25 20:03:26 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters DoE
+2019-06-25 20:03:26 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters DoE
+2019-06-25 20:06:31 TRACE BankRepoJdbc:80 - entering find by name method with paramaters doe
+2019-06-25 20:06:42 TRACE BankRepoJdbc:80 - entering find by name method with paramaters doe
+2019-06-25 20:06:58 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:06:58 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:06:58 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:01 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:01 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:02 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:05 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:05 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:05 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:09 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:10 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:10 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:13 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:13 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:13 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:16 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:16 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:17 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:19 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:19 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:20 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:23 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:23 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:23 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:26 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:27 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:27 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:30 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:30 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:31 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:07:35 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:35 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:07:36 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:08:14 TRACE BankRepoJdbc:80 - entering find by name method with paramaters doe
+2019-06-25 20:08:34 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:08:35 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:08:36 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:08:38 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:08:39 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:08:39 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:08:41 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:08:41 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:08:42 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:08:44 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:08:45 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:08:45 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:27:49 TRACE BankRepoJdbc:80 - entering find by name method with paramaters doe
+2019-06-25 20:29:53 TRACE BankRepoJdbc:80 - entering find by name method with paramaters doe
+2019-06-25 20:30:36 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:30:45 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:30:46 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:31:18 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:31:23 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:31:24 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:31:36 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:31:40 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:31:41 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:32:01 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:32:09 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:32:10 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:34:00 TRACE BankRepoJdbc:80 - entering find by name method with paramaters doe
+2019-06-25 20:34:16 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:34:24 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:34:27 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:34:45 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:34:45 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:34:53 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:34:54 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters doe
+2019-06-25 20:34:54 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters doe
+2019-06-25 20:41:15 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 20:43:09 TRACE BankRepoJdbc:80 - entering find by name method with paramaters micro
+2019-06-25 20:43:39 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 20:44:19 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 20:44:19 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 20:46:18 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 20:46:35 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 20:46:36 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 20:46:36 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 20:47:48 TRACE BankRepoJdbc:80 - entering find by name method with paramaters john
+2019-06-25 20:48:04 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 20:48:05 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
+2019-06-25 20:48:10 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 20:48:11 TRACE BankRepoJdbc:61 - entering get Balance by name method with paramaters john
+2019-06-25 20:48:11 TRACE BankRepoJdbc:46 - entering Update Balance by name method with paramaters john
